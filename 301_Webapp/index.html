@@ -1,0 +1,20 @@
+<!DOCTYPE html> <!-- Linguaggio descrittivo, codice che visualizza la pagina-->
+<html>
+    <head>
+        <link rel="shortcut icon" href="assets/images/elements/logo.png"/>
+        <title>Robin Hood</title>
+        <script src="lib/phaser.min.js"></script>
+        <script type="module" src="src/main.js"></script> <!-- 'MODULE' è la tipologia di scrittura, 'SRC' è lo script js di partenza -->
+    </head>
+    <body style="background-color:black; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <audio id="musica">
+            <source src="assets/sound/musica.mp3">
+        </audio>
+        <script>
+            window.addEventListener('mouseover', () => { // Quando il mouse passa sopra la schermata del platform, la musica inizia
+                document.getElementById("musica").play(); // Inserimento della musica di sottofondo 
+            })
+        </script>
+    </body>
+    
+</html>
